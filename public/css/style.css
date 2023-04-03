@@ -3,25 +3,37 @@ body{
 }
 
 .usr-lgn input[type=text] {
-    border-width: 1px !important;
-    border-style: solid;
-    border-color: chartreuse;
-    border-radius: 5px;
-    padding-top: .5rem;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: .3rem;
-    font-size: .875rem;
-    font-style: italic;
-    line-height: 1.5;
-    width: 20%;
-    background-color: #555c53;
+    width: 100%;
+    background-color: #ffffff;
     color: white;
-    padding: 14px 20px;
+    padding: 12px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
+
+.usr-pass input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.btn-login button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
   
