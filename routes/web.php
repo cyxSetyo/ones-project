@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 //login
 Route::get('/login.index', [LoginController::class, 'index'])->name('login.index');
+Route::post('/store', [LoginController::class , 'store'])->name('login.post');
