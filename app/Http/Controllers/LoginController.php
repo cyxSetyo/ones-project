@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Models\User;
 
 class LoginController extends Controller
 {
@@ -19,11 +21,32 @@ class LoginController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for Register a new User.
      */
-    public function create()
+    public function register()
     {
-        //
+        //Register
+        return view('layouts.register',[
+            'title' => 'Register',
+        ]);
+
+    }
+
+    public function postRegister(Request $request)
+    {
+        //RegisterPost
+        //dd($request->all());
+        $validate = $request->validate([
+            'name' => 'required|min:3|max:12',
+            'email' => 'required|email:dns|unique:users',
+            'password' => 'required|confirmed|min:3|max:20',
+        ]);
+    
+        $validate['password'] = bcrypt($validate['$password']);
+        User::create($validate);
+        $request->session()->flash('success', 'Registration Success, Please Login First!');
+        return redirect('/login.index');
+
     }
 
     /**

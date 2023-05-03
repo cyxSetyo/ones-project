@@ -9,21 +9,26 @@
         <body>
             <div class="login-page">
                 <div class="login-form">
-                    <h1>Login First!</h1>
-                    <form action="{{ route('login.post') }}" method="post">
+                    <h1>Register</h1>
+                    <form action="{{ route('register.post') }}" method="post">
                         @csrf
                         <div class="form-group">
                             
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                            <input type="username" name="username" class="form-control" id="username" placeholder="Username">
                         </div>
                         <div class="form-group">
                             
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email">
                         </div>
-                        <button type="submit">Login</button>
+                        <div class="form-group">
+                            
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+
+                        <button type="submit">Register</button>
                     </form>
                     <div class="link-create">
-                        <p class="message">Not registered? <a href="{{ route('register') }}">Create an account</a></p>
+                        <p class="message">Already registered? <a href="{{ route('login.index') }}">Sign In</a></p>
                     </div>
                 </div>
             </div>
