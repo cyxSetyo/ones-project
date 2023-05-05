@@ -14,7 +14,7 @@
                         @csrf
                         <div class="form-group">
                             
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                            <input type="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
                         </div>
                         <div class="form-group">
                             
@@ -23,7 +23,7 @@
                         <button type="submit">Login</button>
                     </form>
                     <div class="link-create">
-                        <p class="message">Not registered? <a href="{{ route('register') }}">Create an account</a></p>
+                        <p class="message-link">Not registered? <a href="{{ route('register') }}">Create an account</a></p>
                     </div>
                 </div>
             </div>

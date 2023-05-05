@@ -14,7 +14,7 @@
                         @csrf
                         <div class="form-group">
                             
-                            <input type="username" name="username" class="form-control" id="username" placeholder="Username">
+                            <input type="text" name="username" class="form-control" id="username" placeholder="Username">
                         </div>
                         <div class="form-group">
                             
@@ -25,10 +25,10 @@
                             <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         </div>
 
-                        <button type="submit">Register</button>
+                        <button type="submit" onclick="msgsuccess()">Register</button>
                     </form>
                     <div class="link-create">
-                        <p class="message">Already registered? <a href="{{ route('login.index') }}">Sign In</a></p>
+                        <p class="message-link">Already registered? <a href="{{ route('login.index') }}">Sign In</a></p>
                     </div>
                 </div>
             </div>
