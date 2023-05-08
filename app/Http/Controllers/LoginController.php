@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\hash;
 use App\Models\User;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -39,10 +40,10 @@ class LoginController extends Controller
         $validate = $request->validate([
             'username' => 'required|min:3|max:12',
             'email' => 'required|email:dns|unique:users',
-            'password' => 'required|confirmed|min:3|max:20',
+            'password' => 'required|min:3|max:20',
         ]);
     
-        $validate['password'] = bcrypt($validate['$password']);
+        $validate['password'] = bcrypt($validate['password']);
         User::create($validate);
         $request->session()->flash('success', 'Registration Success, Please Login First!');
         return redirect('/login');
@@ -55,22 +56,21 @@ class LoginController extends Controller
     public function store(Request $request)
     {
         //login
+        //dd($request)->all();
         $credentials = $request->validate([
-            'username' => ['required'],
-            'password' => ['required']
+            'username' => 'required',
+            'password' => 'required'
         ]);
 
         if (Auth::attempt($credentials)){
             $request->session()->regenerate();
-
             return redirect()->intended('/');
         }
 
         return back()->withErrors([
-            'email' => 'Your Email Not Alredy'
-        ])->onlyInput('email');
+            'username' => 'Your Username Not Alredy'
+        ])->onlyInput('username');
 
-        return redirect('/');
     }
 
     /**

@@ -12,7 +12,7 @@ class DashboardController extends Controller
     public function dashboard()
     {
         //
-        return view('welcome',[
+        return view('Dashboard.dashboard',[
             'title' => 'Dashboard'
         ]);
     }

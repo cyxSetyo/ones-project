@@ -14,11 +14,21 @@
                         @csrf
                         <div class="form-group">
                             
-                            <input type="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
+                            <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Username">
+                            @error('username')
+                                <div class="invalid-feedback">
+                                {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <div class="form-group">
                             
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            @error('password')
+                                <div class="invalid-feedback">
+                                {{ $message }}
+                                </div>
+                            @enderror
                         </div>
                         <button type="submit">Login</button>
                     </form>
