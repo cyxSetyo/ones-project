@@ -3,6 +3,26 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.serach-group{
+    float: right;
+    padding-right: 25px;
+}
+
+.serach-group input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.serach-group button{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    background-color: rgb(156, 156, 173);
+}
+
 .navbar-top {
     overflow: hidden;
     background-color: #333;

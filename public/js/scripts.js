@@ -1,6 +1,5 @@
 /* --Modal Register-- */
-$(document).ready(function(){
-    $("#btnModalRegister").click(function(){
-      $("#modalRegister").modal();
-    });
-  });
+$(".nav a").on("click", function(){
+  $(".nav").find(".active").removeClass("active");
+  $(this).parent().addClass("active");
+});
