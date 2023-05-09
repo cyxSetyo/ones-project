@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title }}</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     </head>
         <body>
             <div class="login-page">
@@ -41,7 +41,7 @@
                             @enderror
                         </div>
 
-                        <button type="button"  data-toggle="modal" data-target="#myModal" id="myBtn">Register</button>
+                        <button type="sumbit" >Register</button>
 
                     </form>
                     <div class="link-create">
@@ -50,35 +50,7 @@
                 </div>
             </div>
 
-            <!-- Modal Register -->
-            <div class="modal fade" id="modalRegister" role="dialog">
-                <div class="modal-dialog">
 
-                    <!-- Modal Content Register -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-titleRegister"> Modal Header Register</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Sure Register Your Account</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" data-dismiss="modal">Cancel</button>
-                            <button type="submit">Sumbit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-  
-            <script>
-$(document).ready(function(){
-  $("#myBtn").click(function(){
-    $("#myModal").modal();
-  });
-});
-</script>
-        </body>
+        <script src="{{ asset('js/scripts.js') }}"></script>
+    </body>
 </html>

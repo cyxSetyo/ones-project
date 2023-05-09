@@ -47,6 +47,7 @@ class LoginController extends Controller
         User::create($validate);
         $request->session()->flash('success', 'Registration Success, Please Login First!');
         return redirect('/login');
+       
 
     }
 

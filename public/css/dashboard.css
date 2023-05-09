@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-top {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar-top a{
+    float: left;
+    color: blanchedalmond;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20x;
+}
+
+.navbar-top a:hover{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.navbar-top a.active{
+    background-color: #04AA6D;
+    color: rgb(0, 0, 0);
+}

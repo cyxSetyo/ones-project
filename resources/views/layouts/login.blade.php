@@ -4,11 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title }}</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     </head>
         <body>
             <div class="login-page">
+
                 <div class="login-form">
+                    @if (session()->has('success'))
+                    <div class="alert alert-success" role="alert">  
+                        <strong>{{ session('success') }}</strong>
+                      </div>
+                    @endif
                     <h1>Login First!</h1>
                     <form action="{{ route('login.post') }}" method="post">
                         @csrf
