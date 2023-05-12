@@ -41,15 +41,15 @@
                             @enderror
                         </div>
 
-                        <button type="sumbit" >Register</button>
+                        <button type="submit">Register</button>
 
+                        
                     </form>
                     <div class="link-create">
                         <p class="message-link">Already registered? <a href="{{ route('login.index') }}">Sign In</a></p>
                     </div>
                 </div>
             </div>
-
 
         <script src="{{ asset('js/scripts.js') }}"></script>
     </body>

@@ -11,7 +11,10 @@
     <!-- Top Navbar -->
     @include('template.topNavbar')
     <!-- Top Navbar -->
-    @include('template.leftNavbar')
+    @include('template.rightNavbar')
+
+    @include('template.content')
+
 
 </body>
 <script src="{{ asset('js/scripts.js') }}"></script>
