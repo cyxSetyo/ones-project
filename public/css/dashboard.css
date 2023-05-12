@@ -45,11 +45,21 @@ body{
     max-width: 650px;
     z-index: 1;
     margin: 35px auto 100px;
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.btn-menu button{
+.box-menu button{
     background-color: bisque;
+    padding: 60px;
+    width: fit-content;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    z-index: 1;
+}
+
+.btn-primary:hover{
+    color:#fff;background-color:#286090
 }
