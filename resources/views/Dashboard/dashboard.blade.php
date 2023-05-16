@@ -16,6 +16,7 @@
     @include('template.content')
 
 
+
 </body>
 <script src="{{ asset('js/scripts.js') }}"></script>
 </html>
