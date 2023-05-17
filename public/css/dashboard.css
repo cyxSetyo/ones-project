@@ -1,66 +1,101 @@
-body{
+:root {
+    --primary : #232e86;
+    --bg : #10cadf;
+}
+
+/* Simbol *Bintanng* = All Selector */
+*{
+    /* margin & padding = Reset*/
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.serach-group{
-    float: right;
-    padding-right: 25px;
-}
-
-.serach-group input[type=text]{
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
+    padding: 0;
+    /* mengatur dimensi dari element ketika di kasih padding/border */
+    box-sizing: border-box;
+    /* outline/border : none = berguna ketika mengasih fomr/button/border*/
+    outline: none;
     border: none;
-}
-
-.serach-group button{
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    background-color: rgb(156, 156, 173);
-}
-
-.nav {
-    overflow: hidden;
-    background-color: #333;
-}
-
-.nav :hover{
-    background-color: aliceblue;
-}
-
-.nav-link.active{
-    background-color: aqua;
-}
-
-.nav a{
-    float: left;
-    color: blanchedalmond;
-    padding: 15px 15px;
-    text-align: center;
+    /* agar tidak ada garis bawah ketika membuat link <a>*/
     text-decoration: none;
-    font-size: 20x;
-    padding-left: 100px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.box-menu{
-    background: rgb(156, 204, 207);
-    max-width: 650px;
-    z-index: 1;
-    margin: 35px auto 100px;
-    padding: 60px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--bg);
+    color: #fff; /* Warna Tulisan*/
 }
 
-.btn-menu button{
-    background-color: bisque;
+/*Navbar Top*/
+.navbar{
+    /*felx agar content nys sejajar*/
+    display: flex;
+    /*justify space-between = agar content sejajar secara Horiizontal*/
+    justify-content: space-between;
+    /* align-items: center = agar content sejajar secara Vertical*/
+    align-items: center;
+    /* 1x16 Pixel untuk atas bawah dan 7% untuk responsif ketika layar kecil*/
+    padding: 1rem 7%;
+    background-color: rgba(139, 111, 111, 0.674);
+    border-bottom: 1px solid var(--primary);
+    /*Agar tetap berada di atas*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+} 
+
+/*Logo Navbar*/
+.navbar .navbar-logo{
+    font-size: 1.4rem;
+    /*Font BOLD*/
+    font-weight: 700; 
+    color: #fff;
+    font-style: italic;
 }
+
+/*Logo Atribute Span*/
+.navbar .navbar-logo span{
+    color: red;
+}
+
+/*Atribute a(Inline) Tidak dapat di kasih margin jadi menggunakan display = inline*/
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    /* bilangan pertama Margin untuk Atas & Bawah 
+       bilangan ke-dua Margin untuk Kanan & Kiri*/
+    margin: 0 1rem;
+}
+
+/*Hover untuk merubah warna ketika di klik pada content*/
+.navbar .navbar-nav a:hover{
+    color: var(--bg);
+}
+
+/*Membaut Garis Bawah pada menu*/
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-top : 0.1rem solid var(--primary);
+    transform: scaleX(0);
+}
+
+/*Menampilkan Garis bawah pada menu a::after*/
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(1);
+    transition: 0.2s linear;
+}
+
+
+/*Style Icon search */
+.navbar .navbar-icon a{
+    color: #fff;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+
 
 /* The Modal (background) */
 .modal {

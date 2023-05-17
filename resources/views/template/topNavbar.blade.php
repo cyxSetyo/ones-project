@@ -1,7 +1,22 @@
-<div class="topbar">
-    <div class="nav navbar-top">
-        <a href="#home">Toko Laku</a>
-        </div>
+<nav class="navbar">
+    <a href="#" class="navbar-logo">TokoLaku<span>.com</span></a>
+    <div class="navbar-nav">
+        <a href="#Home">Home</a>
+        <a href="#Product">Product</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
     </div>
-</div>
+
+    <div class="navbar-icon">
+        <a href="#search" id="search">
+            <i data-feather="search"></i>
+        </a>
+        <a href="#shoping" id="shopping">
+            <i data-feather="shopping-cart"></i>
+        </a>
+        <a href="#menu" id="menu">
+            <i data-feather="menu"></i>
+        </a>
+    </div>
+</nav>
 
