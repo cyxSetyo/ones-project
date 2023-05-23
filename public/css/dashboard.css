@@ -95,3 +95,43 @@ body{
     margin: 0 1rem;
 }
 
+/*Disable menu dashboard*/
+#menu {
+    display: none;
+}
+
+/* Scren Laptop*/
+@media (max-width: 1366px) {
+    html{
+        font-size: 85%;
+    }
+}
+
+/* Scren Tablet*/
+@media (max-width: 768px) {
+    html{
+        font-size: 62%;
+    }
+    #menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+    }
+}
+
+/* Scren Handphone*/
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
+    #menu {
+        display: inline-block;
+    }
+}
