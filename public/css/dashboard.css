@@ -33,7 +33,7 @@ body{
     align-items: center;
     /* 1x16 Pixel untuk atas bawah dan 7% untuk responsif ketika layar kecil*/
     padding: 1rem 7%;
-    background-color: rgba(139, 111, 111, 0.674);
+    background-color: rgb(63, 102, 185);
     border-bottom: 1px solid var(--primary);
     /*Agar tetap berada di atas*/
     position: fixed;
@@ -135,3 +135,36 @@ body{
         display: inline-block;
     }
 }
+
+/* Navbar-left */
+.navbar-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #fff;
+    width: 20rem;
+    height: 100vh;
+}
+
+/* Navbar icon */
+.navbar-left .navbar-icon {
+    top: 9%;
+    width: 20rem;
+    position: fixed;
+}
+
+.navbar-left .navbar-icon img{
+    width: 20%;
+    margin: 15px;
+}
+
+.navbar-left .navbar-icon .desc{
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
