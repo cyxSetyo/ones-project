@@ -146,6 +146,11 @@ body{
     height: 100vh;
 }
 
+.navbar-left .content {
+    top: 9%;
+    height: 100vh;
+}
+
 /* Navbar icon */
 .navbar-left .navbar-icon {
     top: 9%;
@@ -161,10 +166,17 @@ body{
 .navbar-left .navbar-icon .desc{
     position: absolute;
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
 }
 
+.navbar-left .navbar-icon .desc p{
+    color: rgb(255, 0, 0);
+}
+
+.navbar-left .describtion p{
+    color: #232e86;
+}
