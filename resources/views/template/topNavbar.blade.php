@@ -1,13 +1,13 @@
 <nav class="navbar">
     <a href="#" class="navbar-logo">TokoLaku<span>.com</span></a>
-    <div class="navbar-nav">
+    <div class="navbar-nav" id="menulist">
         <a href="#Home">Home</a>
         <a href="#Product">Product</a>
         <a href="#About">About</a>
         <a href="#Contact">Contact</a>
     </div>
 
-    <div class="navbar-icon">
+    <div class="navbar-icon" >
         <a href="#search" id="search">
             <i data-feather="search"></i>
         </a>

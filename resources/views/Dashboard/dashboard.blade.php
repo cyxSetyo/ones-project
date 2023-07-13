@@ -13,9 +13,9 @@
 <body>
     <!-- Top Navbar -->
     @include('template.topNavbar')
-    <!-- Top Navbar -->
+    <!-- Left Navbar -->
     @include('template.leftNavbar')
-
+    <!-- Main content -->
     @include('template.content')
 
 

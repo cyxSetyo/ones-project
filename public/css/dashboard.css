@@ -119,12 +119,19 @@ body{
     .navbar .navbar-nav {
         position: absolute;
         top: 100%;
-        right: 0%;
-        background-color: #fff;
-        width: 30rem;
+        right: -100%;
+        background-color: rgb(242, 248, 248);
+        width: 25rem;
         height: 100vh;
     }
+    
+    .navbar .navbar-nav.active{
+        right: 0%;
+    }
+    
+
 }
+
 
 /* Scren Handphone*/
 @media (max-width: 450px) {
@@ -136,47 +143,65 @@ body{
     }
 }
 
-/* Navbar-left */
-.navbar-left {
+/*Navbar Left*/
+ .navbar-left {
+    display: inline-block;
     position: absolute;
     top: 0%;
-    left: 0%;
-    background-color: #fff;
-    width: 20rem;
-    height: 100vh;
-}
-
-.navbar-left .content {
-    top: 9%;
+    background-color: rgb(242, 248, 248);
+    width: 25rem;
     height: 100vh;
 }
 
 /* Navbar icon */
-.navbar-left .navbar-icon {
-    top: 9%;
+.navbar-left  .navbar-icon  {
     width: 20rem;
-    position: fixed;
+    height: 8rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.navbar-left .navbar-icon img{
-    width: 20%;
-    margin: 15px;
+.navbar-icon  img{
+    width: 30%;
+    margin: 5px;
 }
 
-.navbar-left .navbar-icon .desc{
-    position: absolute;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.navbar-icon .text{
     font-size: 1rem;
+    margin: 1rem;
 }
 
-.navbar-left .navbar-icon .desc p{
+.navbar-icon .text h3{
+    color: rgb(0, 26, 255);
+    font-family: sans-serif;
+}
+
+.navbar-icon .text p{
     color: rgb(255, 0, 0);
 }
 
-.navbar-left .describtion p{
+.navbar-left .desc p{
     color: #232e86;
+}
+
+
+  
+.desc {
+    margin-left: 2rem;   
+}
+
+.desc h3 {
+    color: #232e86;   
+}
+
+.desc th {
+    color: #000000;
+    padding-right: 5rem;   
+}
+
+.desc td {
+    color: #000000;   
 }
