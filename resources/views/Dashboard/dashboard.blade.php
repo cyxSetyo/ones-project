@@ -11,14 +11,21 @@
     <title>{{ $title }}</title>
 </head>
 <body>
-    <!-- Top Navbar -->
-    @include('template.topNavbar')
-    <!-- Left Navbar -->
-    @include('template.leftNavbar')
+    
+    <!-- HEADER -->
+    <header>
+        @include('template.header')
+    </header>
+
     <!-- Main content -->
-    @include('template.content')
-
-
+    <main>
+        @include('template.content')
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        @include('template.footer')
+    </footer>
 
 </body>
 <!-- Father Icon -->

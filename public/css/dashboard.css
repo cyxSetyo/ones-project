@@ -1,6 +1,6 @@
 :root {
     --primary : #232e86;
-    --bg : #10cadf;
+    --bg : #0c1516;
 }
 
 /* Simbol *Bintanng* = All Selector */
@@ -123,15 +123,31 @@ body{
         background-color: rgb(242, 248, 248);
         width: 25rem;
         height: 100vh;
+        transition: 0.3s;
+        
     }
     
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+    }
+
     .navbar .navbar-nav.active{
         right: 0%;
     }
     
+    .navbar .navbar-nav a{
+        color: var(--bg);
+        display: block; /*element turun ke bawah */
+        margin: 1.5rem; /* 1.5 rem = 24px*/
+        padding: 0.5rem; /* 0.5 rem = 8px*/
+        font-size: 2rem;
+    }
 
 }
-
 
 /* Scren Handphone*/
 @media (max-width: 450px) {
@@ -143,65 +159,15 @@ body{
     }
 }
 
-/*Navbar Left*/
- .navbar-left {
-    display: inline-block;
-    position: absolute;
-    top: 0%;
-    background-color: rgb(242, 248, 248);
-    width: 25rem;
-    height: 100vh;
-}
-
-/* Navbar icon */
-.navbar-left  .navbar-icon  {
-    width: 20rem;
-    height: 8rem;
-    margin-top: 5rem;
+.parent-box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
-.navbar-icon  img{
-    width: 30%;
+.box{
+    flex: 1 1 150px;
     margin: 5px;
-}
-
-.navbar-icon .text{
-    font-size: 1rem;
-    margin: 1rem;
-}
-
-.navbar-icon .text h3{
-    color: rgb(0, 26, 255);
-    font-family: sans-serif;
-}
-
-.navbar-icon .text p{
-    color: rgb(255, 0, 0);
-}
-
-.navbar-left .desc p{
-    color: #232e86;
-}
-
-
-  
-.desc {
-    margin-left: 2rem;   
-}
-
-.desc h3 {
-    color: #232e86;   
-}
-
-.desc th {
-    color: #000000;
-    padding-right: 5rem;   
-}
-
-.desc td {
-    color: #000000;   
+    background: red;
+    gap: 1rem;
 }
