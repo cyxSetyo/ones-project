@@ -13,19 +13,13 @@
 <body>
     
     <!-- HEADER -->
-    <header>
         @include('template.header')
-    </header>
 
     <!-- Main content -->
-    <main>
         @include('template.content')
-    </main>
     
     <!-- FOOTER -->
-    <footer>
         @include('template.footer')
-    </footer>
 
 </body>
 <!-- Father Icon -->

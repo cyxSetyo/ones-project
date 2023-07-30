@@ -159,15 +159,20 @@ body{
     }
 }
 
-.parent-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+/* CCS MAIN*/
+
+main{
+    background-color: #0c1516;
 }
 
-.box{
-    flex: 1 1 150px;
-    margin: 5px;
-    background: red;
-    gap: 1rem;
+footer{
+    background-color: #232e86;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
 }

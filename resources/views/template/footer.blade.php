@@ -1,7 +1,3 @@
-<div class="navbar-left">
-
-</div>
-
-<div class="navbar-main">
-
-</div>
+<footer class="footer">
+    <p>&copy; 2023 Situs Cyx Ganteng</p>
+</footer>
